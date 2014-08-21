@@ -45,5 +45,6 @@
 	#define log_end		con_end
 #endif //_slogger_included
 
+
 void write_to_console(_In_ DWORD log_level, _In_ wchar_t* function, _In_ wchar_t* format, ...);
 

@@ -50,6 +50,7 @@ NTSTATUS DriverEntry(IN PDRIVER_OBJECT DriverObject, IN PUNICODE_STRING Registry
 		"===============================================================================\n", 
 		__TIME__, __DATE__
 	log_end
+	
 
 	 //> device 이름 생성
     RtlInitUnicodeString(&ntName, _nt_device_name);
