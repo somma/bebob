@@ -1,0 +1,11 @@
+*.opensdf
+*.sdf
+*.suo
+*.user
+*_debug/
+*_release/
+*.log
+*_x86/
+*_x64/
+build/
+ipch/
