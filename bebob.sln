@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdrv", "bob_drv\hama_sys.vcxproj", "{FE25DD79-4293-416C-8EDC-59FB385D9546}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bebob", "bebob\svc_controller.vcxproj", "{2ABFE062-1479-4E2E-90A7-83A42B5F776F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE25DD79-4293-416C-8EDC-59FB385D9546}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FE25DD79-4293-416C-8EDC-59FB385D9546}.Debug|Win32.Build.0 = Debug|Win32
+		{FE25DD79-4293-416C-8EDC-59FB385D9546}.Debug|x64.ActiveCfg = Debug|x64
+		{FE25DD79-4293-416C-8EDC-59FB385D9546}.Debug|x64.Build.0 = Debug|x64
+		{FE25DD79-4293-416C-8EDC-59FB385D9546}.Release|Win32.ActiveCfg = Release|Win32
+		{FE25DD79-4293-416C-8EDC-59FB385D9546}.Release|Win32.Build.0 = Release|Win32
+		{FE25DD79-4293-416C-8EDC-59FB385D9546}.Release|x64.ActiveCfg = Release|x64
+		{FE25DD79-4293-416C-8EDC-59FB385D9546}.Release|x64.Build.0 = Release|x64
+		{2ABFE062-1479-4E2E-90A7-83A42B5F776F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2ABFE062-1479-4E2E-90A7-83A42B5F776F}.Debug|Win32.Build.0 = Debug|Win32
+		{2ABFE062-1479-4E2E-90A7-83A42B5F776F}.Debug|x64.ActiveCfg = Debug|x64
+		{2ABFE062-1479-4E2E-90A7-83A42B5F776F}.Debug|x64.Build.0 = Debug|x64
+		{2ABFE062-1479-4E2E-90A7-83A42B5F776F}.Release|Win32.ActiveCfg = Release|Win32
+		{2ABFE062-1479-4E2E-90A7-83A42B5F776F}.Release|Win32.Build.0 = Release|Win32
+		{2ABFE062-1479-4E2E-90A7-83A42B5F776F}.Release|x64.ActiveCfg = Release|x64
+		{2ABFE062-1479-4E2E-90A7-83A42B5F776F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
