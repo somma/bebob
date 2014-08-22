@@ -90,6 +90,9 @@ NTSTATUS DriverEntry(IN PDRIVER_OBJECT DriverObject, IN PUNICODE_STRING Registry
     DriverObject->MajorFunction[IRP_MJ_CLEANUP] = DispatchCleanup;   
     DriverObject->DriverUnload = DispatchUnload;
 	
+	// raise BSOD
+	KeBugCheckEx(0xbaadf00d, 0x00000000, 0x00000000, 0x00000000, 0x00000000);
+
 	g_dev_ext->initialized = true;
 	return STATUS_SUCCESS;
 }

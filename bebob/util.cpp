@@ -59,7 +59,7 @@ void write_to_console(_In_ DWORD log_level, _In_ wchar_t* function, _In_ wchar_t
 	case LL_NONE:
 	default:
 		{
-			strm_prefix << function << L", ";
+			//strm_prefix << function << L", ";
 			break;
 		}
 	}

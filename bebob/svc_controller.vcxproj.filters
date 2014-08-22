@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="share">
+      <UniqueIdentifier>{be1e883f-5f74-4532-a980-3e9fc94b81c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -26,6 +29,12 @@
     </ClInclude>
     <ClInclude Include="util.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\fc_drv_ioctl.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\fc_drv_share.h">
+      <Filter>share</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

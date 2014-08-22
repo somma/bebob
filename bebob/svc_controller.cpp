@@ -10,6 +10,10 @@
 #include "stdafx.h"
 #include "scm_context.h"
 
+#include "..\share\fc_drv_ioctl.h"
+#include "..\share\fc_drv_share.h"
+
+
 void show_usage(_In_ const wchar_t* argv0);
 
 /**
@@ -38,11 +42,28 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 
 	// install service and start service for our driver.
+	scm_context scm(driver_path, _service_name, _service_name_display, true);
+	if (true != scm.install_driver())
+	{
+		log_err L"scm.install_drvier() failed." log_end
+		return -1;
+	}
+	log_info L"service = [%s] installed successfully.", _service_name_display log_end
 
-	
+	if (true != scm.start_driver())
+	{
+		log_err L"scm.start_driver() failed." log_end
+		return -1;
+	}
+	log_info L"service = [%s] started successfully.", _service_name_display log_end
 
-	
+	// wait for user's input
+	log_msg L">> press any [enter] to terminate..." log_end
+	getchar();
 
+	// uninstall and stop service
+	scm.stop_driver();
+	scm.uninstall_driver();
 
 	return 0;
 }
