@@ -90,7 +90,7 @@ void show_usage(_In_ const wchar_t* argv0)
 		L"== driver controller by somma(fixbrain@gmail.com)   ==\n"\
 		L"======================================================\n"\
 		L"usage : %s [driver_path]\n"\
-		L"usage : %s d:\\some_dir\\kdrv.sys\n", 
+		L"usage : %s d:\\some_dir\\kdrv.sys\n", 		
 		argv0, argv0	
 	log_end
 }
