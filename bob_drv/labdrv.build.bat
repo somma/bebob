@@ -161,8 +161,8 @@ copy "%_target_path%" "%_output_directory%"
 echo [*] copy driver pdb files [ %_target_pdb% ] to [ %_output_directory% ]
 copy "%_target_pdb%" "%_output_directory%"
 
-rem echo [*] copy driver files to debug target
-rem copy /Y "%_target_path%" v:
+echo [*] copy driver files to debug target
+copy /Y "%_target_path%" v:\dbg\
 rem goto :EOF
 
 
