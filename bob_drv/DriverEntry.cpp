@@ -249,6 +249,12 @@ HMHandleIoControl(
 			sample_lookaside_list();
 			sample_file_write();
 			sample_file_read();
+
+			//
+			//
+			sample_thread();
+			sample_workitem();
+
 			//
 			//
 			enum_process_threads();

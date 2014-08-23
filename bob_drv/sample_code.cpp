@@ -106,22 +106,6 @@ void sample_lookaside_list()
 	plookaside_finalize(&paged_llist);
 }
 
-
-/**
- * @brief	
- * @param	
- * @see		
- * @remarks	
- * @code		
- * @endcode	
- * @return	
-**/
-void sample_thread()
-{
-
-}
-
-
 /**
  * @brief	
  * @param	
@@ -226,6 +210,33 @@ void sample_file_read()
 	// TODO
 }
 
+/**
+ * @brief	
+ * @param	
+ * @see		
+ * @remarks	
+ * @code		
+ * @endcode	
+ * @return	
+**/
+void sample_thread()
+{
+	// TODO
+}
+
+/**
+ * @brief	
+ * @param	
+ * @see		
+ * @remarks	
+ * @code		
+ * @endcode	
+ * @return	
+**/
+void sample_workitem()
+{
+	// TODO
+}
 
 
 /**
