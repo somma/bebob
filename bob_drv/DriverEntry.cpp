@@ -8,11 +8,12 @@
  * - 10.11.2010 created
 **---------------------------------------------------------------------------*/
 #include "DriverHeaders.h"
-#include "DriverDebug.h"
 #include "fc_drv_util.h"
 #include "fc_drv_ioctl.h"
 #include "asm_function.h"
 #include "arch.h"
+
+#include "sample_code.h"
 
 // 
 // global
@@ -90,9 +91,6 @@ NTSTATUS DriverEntry(IN PDRIVER_OBJECT DriverObject, IN PUNICODE_STRING Registry
     DriverObject->MajorFunction[IRP_MJ_CLEANUP] = DispatchCleanup;   
     DriverObject->DriverUnload = DispatchUnload;
 	
-	// raise BSOD
-	KeBugCheckEx(0xbaadf00d, 0x00000000, 0x00000000, 0x00000000, 0x00000000);
-
 	g_dev_ext->initialized = true;
 	return STATUS_SUCCESS;
 }
@@ -246,6 +244,15 @@ HMHandleIoControl(
 	{	
 	case _io_test: 
 		{
+			sample_linked_list();
+			sample_kernel_heap();
+			sample_lookaside_list();
+			sample_file_write();
+			sample_file_read();
+			//
+			//
+			enum_process_threads();
+
 			status = STATUS_SUCCESS;
 			break;
 		}

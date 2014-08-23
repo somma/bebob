@@ -18,6 +18,7 @@ extern "C" {
 #include <ntifs.h>
 #include <ntstrsafe.h>
 #include <ntintsafe.h>
+#include <specstrings.h>    // for __in, etc.
 
 #ifdef __cplusplus
 }

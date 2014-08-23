@@ -47,7 +47,8 @@ SOURCES=\
 	DriverEntry.cpp	\
 	DriverDebug.cpp \
 	fc_drv_util.cpp \
-	asm_function.cpp
+	asm_function.cpp \
+	sample_code.cpp
 
 I386_SOURCES=\
 	x86.asm

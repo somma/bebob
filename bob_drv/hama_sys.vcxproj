@@ -31,6 +31,7 @@
     <ClCompile Include="DriverDebug.cpp" />
     <ClCompile Include="DriverEntry.cpp" />
     <ClCompile Include="fc_drv_util.cpp" />
+    <ClCompile Include="sample_code.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\share\fc_drv_ioctl.h" />
@@ -40,6 +41,7 @@
     <ClInclude Include="DriverHeaders.h" />
     <ClInclude Include="fc_drv_util.h" />
     <ClInclude Include="arch.h" />
+    <ClInclude Include="sample_code.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FE25DD79-4293-416C-8EDC-59FB385D9546}</ProjectGuid>

@@ -13,6 +13,9 @@
     <ClCompile Include="asm_function.cpp">
       <Filter>sources</Filter>
     </ClCompile>
+    <ClCompile Include="sample_code.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="asm_function.h">
@@ -35,6 +38,9 @@
     </ClInclude>
     <ClInclude Include="..\share\fc_drv_share.h">
       <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_code.h">
+      <Filter>sources</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

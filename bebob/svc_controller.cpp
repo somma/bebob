@@ -57,6 +57,18 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	log_info L"service = [%s] started successfully.", _service_name_display log_end
 
+
+	// send ioctl code
+	UINT32 bytes_returned = 0;
+	if (true != scm.send_command(_io_test, 0, NULL, 0, NULL, &bytes_returned))
+	{
+		log_err L"scm.send_command(_io_test) failed. " log_end
+	}
+	else
+	{
+		log_info L"_io_test succeeded." log_end	
+	}
+
 	// wait for user's input
 	log_msg L">> press any [enter] to terminate..." log_end
 	getchar();
