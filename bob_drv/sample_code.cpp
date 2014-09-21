@@ -59,7 +59,7 @@ void sample_kernel_heap()
 	if (NULL == p) return;
 	
 	log_info "pool allocated = 0x%p", p log_end	
-	//__asm int 3
+	__asm int 3
 
 	ExFreePoolWithTag(p, ' GAT');
 }
@@ -210,6 +210,21 @@ void sample_file_read()
 	// TODO
 }
 
+
+/**
+ * @brief	
+ * @param	
+ * @see		
+ * @remarks	
+ * @code		
+ * @endcode	
+ * @return	
+**/
+void sample_reg_io()
+{
+	// TODO
+}
+
 /**
  * @brief	
  * @param	
@@ -295,7 +310,7 @@ void sample_workitem()
 **/
 void enum_process_threads()
 {
-	// TODO
+	//DWORD_PTR active_list_head = 
 }
 
 /**

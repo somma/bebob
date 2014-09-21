@@ -2,7 +2,7 @@
 # sources 
 #
 
-#TARGETNAME=hama
+#TARGETNAME=kdrv
 TARGETTYPE=DRIVER
 DRIVERBASE=0x00400000
 					  

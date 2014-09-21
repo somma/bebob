@@ -16,6 +16,8 @@ void sample_lookaside_list();
 void sample_file_write();
 void sample_file_read();
 
+void sample_reg_io();
+
 void sample_thread();
 void sample_workitem();
 
